@@ -3320,7 +3320,9 @@ h2, h3 { color: #38761D; }
     $('#myTable').DataTable({
       ordering: false,
       responsive: true,
-       "dom": '<"top"lp><"bottom"lp><"clear">',
+      dom: "<'row'<'col-sm-3'l><'col-sm-3'f><'col-sm-6'p>>" +
+         "<'row'<'col-sm-12'tr>>" +
+         "<'row'<'col-sm-5'i><'col-sm-7'p>>",
       "pageLength": 3, 
       "lengthMenu": [3, 5, 10, 25, 50, 100, 300]
       });
